@@ -4,6 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Babacar Senghor — Expertise Digitale & Développement sur mesure</title>
+<meta name="description" content="Développeur fullstack freelance basé à Dakar : sites web, SaaS, applications mobiles, IA &amp; automatisation. Tarifs transparents, méthode claire, disponible à distance.">
+<meta name="author" content="Babacar Senghor">
+<meta name="theme-color" content="#080b14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Babacar Senghor">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Babacar Senghor — Développeur Fullstack, SaaS, Mobile &amp; IA">
+<meta property="og:description" content="Sites web, SaaS, applications mobiles, IA &amp; automatisation. Tarifs transparents, méthode claire, disponible à distance depuis Dakar.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Babacar Senghor — Développeur Fullstack, SaaS, Mobile &amp; IA">
+<meta name="twitter:description" content="Sites web, SaaS, applications mobiles, IA &amp; automatisation. Tarifs transparents, méthode claire, disponible à distance depuis Dakar.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzA4MGIxNCIvPjxyZWN0IHg9IjExIiB5PSIxMSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiByeD0iMiIgZmlsbD0iIzIyZTZhNiIgdHJhbnNmb3JtPSJyb3RhdGUoNDUgMTYgMTYpIi8+PC9zdmc+">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -278,6 +290,9 @@
   .services{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;}
   .svc{background:var(--panel);padding:34px 30px;transition:background .25s ease, opacity .9s cubic-bezier(.16,.8,.4,1), transform .9s cubic-bezier(.16,.8,.4,1), filter .9s cubic-bezier(.16,.8,.4,1);}
   .svc:hover{background:var(--panel-alt);}
+  .svc.featured{grid-column:1 / -1;background:linear-gradient(120deg, var(--panel), rgba(34,230,166,.07));}
+  .svc.featured:hover{background:linear-gradient(120deg, var(--panel-alt), rgba(34,230,166,.1));}
+  .svc.featured .tag{color:var(--accent);}
   .svc .tag{font-family:var(--font-mono);font-size:11px;color:var(--muted);letter-spacing:.08em;}
   .svc h3{font-size:21px;margin:12px 0 10px;font-weight:600;}
   .svc .price{
@@ -288,6 +303,47 @@
   }
   .svc p.desc{color:var(--muted);font-size:14px;line-height:1.65;}
   @media (max-width:760px){.services{grid-template-columns:1fr;}}
+
+  /* ---------- REALISATIONS ---------- */
+  .work-group{margin-bottom:34px;}
+  .work-group:last-child{margin-bottom:0;}
+  .work-group-label{
+    font-family:var(--font-mono);font-size:11.5px;color:var(--accent);
+    letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;
+  }
+  .works{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;}
+  .work{
+    position:relative;background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    overflow:hidden;
+    transition:background .25s ease, opacity .9s cubic-bezier(.16,.8,.4,1), transform .9s cubic-bezier(.16,.8,.4,1), filter .9s cubic-bezier(.16,.8,.4,1);
+  }
+  .work:hover{background:var(--panel-alt);}
+  .work-cover{
+    height:130px;display:flex;align-items:center;justify-content:center;
+    background:var(--panel-alt);border-bottom:1px solid var(--line);
+  }
+  .work-cover svg{width:36px;height:36px;fill:none;stroke:var(--accent);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.9;}
+  .work-cover.c-site{background:radial-gradient(circle at 28% 22%, rgba(34,230,166,.2), transparent 60%), var(--panel-alt);}
+  .work-cover.c-saas{background:radial-gradient(circle at 28% 22%, rgba(255,178,56,.2), transparent 60%), var(--panel-alt);}
+  .work-cover.c-saas svg{stroke:var(--amber);}
+  .work-cover.c-mobile{background:radial-gradient(circle at 28% 22%, rgba(10,102,194,.26), transparent 60%), var(--panel-alt);}
+  .work-cover.c-mobile svg{stroke:var(--linkedin);}
+  .work-cover.c-ia{background:radial-gradient(circle at 24% 20%, rgba(34,230,166,.2), transparent 55%), radial-gradient(circle at 80% 85%, rgba(255,178,56,.16), transparent 55%), var(--panel-alt);}
+  .work-demo{
+    position:absolute;top:12px;right:12px;z-index:1;
+    font-family:var(--font-mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--muted);background:rgba(8,11,20,.7);backdrop-filter:blur(4px);
+    padding:4px 8px;border-radius:5px;border:1px solid var(--line-strong);
+  }
+  .work-body{padding:20px 22px 24px;}
+  .work h3{font-size:18px;margin-bottom:8px;font-weight:600;}
+  .work p.desc{color:var(--muted);font-size:13.5px;line-height:1.6;margin-bottom:14px;}
+  .work-link{
+    display:inline-block;margin-top:14px;
+    font-family:var(--font-mono);font-size:12.5px;color:var(--accent);
+  }
+  .work-link:hover{color:#7dffce;}
+  @media (max-width:600px){.works{grid-template-columns:1fr;}}
 
   /* ---------- PROCESS ---------- */
   .pipeline{position:relative;padding-left:2px;}
@@ -448,6 +504,7 @@
     </div>
     <nav class="nav-links">
       <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
       <a href="#process">Processus</a>
       <a href="#stack">Stack</a>
       <a href="#tarifs">Tarifs</a>
@@ -464,7 +521,7 @@
       <h1 class="reveal">Des solutions digitales conçues <em>pour votre activité</em>, pas pour un cahier des charges générique.</h1>
       <p class="lead reveal">Web, SaaS, applications métier, mobile, SEO, IA &amp; automatisation — conception et développement de plateformes qui résolvent un vrai problème business, du cadrage jusqu'à la mise en production.</p>
       <div class="hero-meta reveal">
-        <div class="m"><b data-count="4">0</b>domaines de service</div>
+        <div class="m"><b data-count="5">0</b>domaines de service</div>
         <div class="m"><b data-count="6">0</b>étapes, un process transparent</div>
         <div class="m"><b>45/55</b>répartition acompte / solde</div>
       </div>
@@ -493,7 +550,7 @@
   <div class="wrap">
     <div class="sec-head">
       <h2>Ce que je construis</h2>
-      <p>Quatre domaines d'intervention, chacun avec un périmètre et une fourchette de prix clairs dès le départ.</p>
+      <p>Cinq domaines d'intervention, chacun avec un périmètre et une fourchette de prix clairs dès le départ.</p>
     </div>
     <div class="services">
       <div class="svc">
@@ -519,6 +576,105 @@
         <h3>Application mobile</h3>
         <span class="price">2 300 € – 3 050 €</span>
         <p class="desc">Applications Android &amp; iOS en Flutter : authentification, paiement, notifications, géolocalisation, API, base de données, back-office, publication sur les stores.</p>
+      </div>
+      <div class="svc featured">
+        <span class="tag">service.05 — intelligence &amp; automatisation</span>
+        <h3>IA &amp; Automatisation</h3>
+        <span class="price">600 € – 3 800 €</span>
+        <p class="desc">Agents IA, chatbots, systèmes RAG, automatisation de processus métier (n8n, scripts sur mesure) et intégration de modèles IA (OpenAI, Claude, etc.) dans vos outils existants.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="realisations">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Réalisations</h2>
+      <p>Exemples illustratifs par catégorie, en attendant la publication de projets réels.</p>
+    </div>
+
+    <div class="work-group">
+      <div class="work-group-label">Sites &amp; landing pages</div>
+      <div class="works">
+        <div class="work">
+          <div class="work-cover c-site"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><circle cx="6.5" cy="6.5" r=".5" fill="currentColor" stroke="none"></circle><circle cx="8.5" cy="6.5" r=".5" fill="currentColor" stroke="none"></circle></svg></div>
+          <span class="work-demo">exemple</span>
+          <div class="work-body">
+            <h3>Atelier Kōra</h3>
+            <p class="desc">Site vitrine pour un atelier d'artisanat, avec formulaire de devis et galerie de réalisations.</p>
+            <div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span></div>
+            <a class="work-link" href="realisation-atelier-kora.html">Voir le projet →</a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-cover c-site"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><circle cx="6.5" cy="6.5" r=".5" fill="currentColor" stroke="none"></circle><circle cx="8.5" cy="6.5" r=".5" fill="currentColor" stroke="none"></circle></svg></div>
+          <span class="work-demo">exemple</span>
+          <div class="work-body">
+            <h3>Cabinet Fana Conseil</h3>
+            <p class="desc">Site vitrine pour un cabinet de conseil, avec prise de rendez-vous en ligne intégrée.</p>
+            <div class="chips"><span class="chip">React</span><span class="chip">SEO</span></div>
+            <a class="work-link" href="realisation-cabinet-fana-conseil.html">Voir le projet →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group">
+      <div class="work-group-label">SaaS &amp; applications métier</div>
+      <div class="works">
+        <div class="work">
+          <div class="work-cover c-saas"><svg viewBox="0 0 24 24"><rect x="4" y="12" width="3.5" height="8"></rect><rect x="10.25" y="7" width="3.5" height="13"></rect><rect x="16.5" y="3" width="3.5" height="17"></rect></svg></div>
+          <span class="work-demo">exemple</span>
+          <div class="work-body">
+            <h3>StockFlow</h3>
+            <p class="desc">Gestion de stock et de commandes pour PME, avec tableaux de bord et alertes de réapprovisionnement.</p>
+            <div class="chips"><span class="chip">Angular</span><span class="chip">Spring Boot</span><span class="chip">PostgreSQL</span></div>
+            <a class="work-link" href="realisation-stockflow.html">Voir le projet →</a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-cover c-saas"><svg viewBox="0 0 24 24"><rect x="4" y="12" width="3.5" height="8"></rect><rect x="10.25" y="7" width="3.5" height="13"></rect><rect x="16.5" y="3" width="3.5" height="17"></rect></svg></div>
+          <span class="work-demo">exemple</span>
+          <div class="work-body">
+            <h3>FacturePro</h3>
+            <p class="desc">Facturation et devis en ligne pour indépendants, avec suivi des paiements et relances automatiques.</p>
+            <div class="chips"><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">MongoDB</span></div>
+            <a class="work-link" href="realisation-facturepro.html">Voir le projet →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group">
+      <div class="work-group-label">Application mobile</div>
+      <div class="works">
+        <div class="work">
+          <div class="work-cover c-mobile"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"></rect><line x1="7" y1="18" x2="17" y2="18"></line></svg></div>
+          <span class="work-demo">exemple</span>
+          <div class="work-body">
+            <h3>TontineApp</h3>
+            <p class="desc">Application de gestion d'épargne collective, avec suivi des cotisations et notifications de tour.</p>
+            <div class="chips"><span class="chip">Flutter</span><span class="chip">Node.js</span><span class="chip">REST API</span></div>
+            <a class="work-link" href="realisation-tontineapp.html">Voir le projet →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group">
+      <div class="work-group-label">IA &amp; automatisation</div>
+      <div class="works">
+        <div class="work">
+          <div class="work-cover c-ia"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"></circle><circle cx="5" cy="19" r="2"></circle><circle cx="19" cy="19" r="2"></circle><line x1="12" y1="7" x2="6.2" y2="17.3"></line><line x1="12" y1="7" x2="17.8" y2="17.3"></line><line x1="7" y1="19" x2="17" y2="19"></line></svg></div>
+          <span class="work-demo">exemple</span>
+          <div class="work-body">
+            <h3>AssistantPro</h3>
+            <p class="desc">Chatbot IA de support client avec base de connaissances (RAG) et automatisation des relances.</p>
+            <div class="chips"><span class="chip">Agents IA</span><span class="chip">RAG</span><span class="chip">Automatisation</span></div>
+            <a class="work-link" href="realisation-assistantpro.html">Voir le projet →</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -653,6 +809,7 @@
       <div class="row"><span class="label"><b class="idx">02</b>Référencement SEO</span><span class="amt">230 € – 380 €</span></div>
       <div class="row"><span class="label"><b class="idx">03</b>SaaS / application métier</span><span class="amt">2 300 € – 4 600 €</span></div>
       <div class="row"><span class="label"><b class="idx">04</b>Application mobile</span><span class="amt">2 300 € – 3 050 €</span></div>
+      <div class="row"><span class="label"><b class="idx">05</b>IA &amp; Automatisation</span><span class="amt">600 € – 3 800 €</span></div>
       <div class="row note"><span>* devis final après cadrage du périmètre</span><span></span></div>
     </div>
   </div>
@@ -726,6 +883,7 @@
   // group reveals: cascade each item in a grid/list one after another
   [
     { selector:'.services > .svc', step:70 },
+    { selector:'.works > .work', step:70 },
     { selector:'.pipeline > .step', step:70 },
     { selector:'.why > .why-item', step:60 },
     { selector:'.invoice > .row:not(.note)', step:55 },
