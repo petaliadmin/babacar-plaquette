@@ -1,0 +1,46 @@
+<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aperçu de la plateforme GeoFlood">
+  <rect width="480" height="240" fill="#141d30"/>
+  <rect x="0" y="0" width="480" height="30" fill="#0f1626"/>
+  <circle cx="18" cy="15" r="4" fill="#eaf0fa" opacity=".18"/>
+  <circle cx="32" cy="15" r="4" fill="#eaf0fa" opacity=".18"/>
+  <circle cx="46" cy="15" r="4" fill="#eaf0fa" opacity=".18"/>
+  <rect x="70" y="9" width="220" height="12" rx="6" fill="#eaf0fa" opacity=".08"/>
+
+  <!-- map panel -->
+  <rect x="24" y="48" width="230" height="168" rx="10" fill="#0f1626" stroke="#eaf0fa" stroke-opacity=".1"/>
+  <path d="M24 150 Q90 110 150 140 T255 130" stroke="#22e6a6" stroke-opacity=".25" stroke-width="26" fill="none"/>
+  <path d="M24 175 Q100 150 160 178 T255 165" stroke="#22e6a6" stroke-opacity=".15" stroke-width="18" fill="none"/>
+  <circle cx="120" cy="120" r="34" fill="none" stroke="#ff6b6b" stroke-opacity=".35" stroke-width="2"/>
+  <circle cx="120" cy="120" r="18" fill="#ff6b6b" opacity=".22"/>
+  <path d="M120 100 C132 114 132 128 120 132 C108 128 108 114 120 100 Z" fill="#ff6b6b" opacity=".85"/>
+  <circle cx="190" cy="90" r="5" fill="#22e6a6" opacity=".8"/>
+  <circle cx="70" cy="80" r="5" fill="#22e6a6" opacity=".6"/>
+  <circle cx="200" cy="180" r="5" fill="#ffb238" opacity=".8"/>
+  <rect x="34" y="58" width="90" height="9" rx="4.5" fill="#eaf0fa" opacity=".25"/>
+
+  <!-- risk badge -->
+  <rect x="268" y="48" width="188" height="52" rx="10" fill="#ff6b6b" opacity=".14" stroke="#ff6b6b" stroke-opacity=".45"/>
+  <circle cx="292" cy="74" r="12" fill="#ff6b6b" opacity=".8"/>
+  <path d="M292 67 L292 76 M292 80.5 L292 81" stroke="#0f1626" stroke-width="2.4" stroke-linecap="round"/>
+  <rect x="314" y="62" width="120" height="9" rx="4.5" fill="#eaf0fa" opacity=".4"/>
+  <rect x="314" y="78" width="80" height="7" rx="3.5" fill="#ff6b6b" opacity=".7"/>
+
+  <!-- weather mini stats -->
+  <rect x="268" y="110" width="90" height="50" rx="8" fill="#0f1626" stroke="#eaf0fa" stroke-opacity=".1"/>
+  <circle cx="288" cy="130" r="10" fill="#ffb238" opacity=".7"/>
+  <rect x="304" y="124" width="42" height="7" rx="3.5" fill="#eaf0fa" opacity=".3"/>
+  <rect x="304" y="136" width="30" height="6" rx="3" fill="#eaf0fa" opacity=".18"/>
+
+  <rect x="366" y="110" width="90" height="50" rx="8" fill="#0f1626" stroke="#eaf0fa" stroke-opacity=".1"/>
+  <path d="M382 138 q6 -14 12 -4 q6 -10 12 4" stroke="#22e6a6" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".8"/>
+  <rect x="402" y="124" width="38" height="7" rx="3.5" fill="#eaf0fa" opacity=".3"/>
+
+  <!-- alert list -->
+  <rect x="268" y="170" width="188" height="24" rx="7" fill="#0f1626" stroke="#eaf0fa" stroke-opacity=".08"/>
+  <circle cx="282" cy="182" r="4" fill="#ff6b6b" opacity=".8"/>
+  <rect x="296" y="178" width="140" height="7" rx="3.5" fill="#eaf0fa" opacity=".22"/>
+
+  <rect x="268" y="198" width="188" height="24" rx="7" fill="#0f1626" stroke="#eaf0fa" stroke-opacity=".08"/>
+  <circle cx="282" cy="210" r="4" fill="#ffb238" opacity=".8"/>
+  <rect x="296" y="206" width="120" height="7" rx="3.5" fill="#eaf0fa" opacity=".22"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aperçu du chatbot AssistantPro">
+  <rect width="480" height="240" fill="#141d30"/>
+  <rect x="0" y="0" width="480" height="30" fill="#0f1626"/>
+  <circle cx="18" cy="15" r="4" fill="#eaf0fa" opacity=".18"/>
+  <circle cx="32" cy="15" r="4" fill="#eaf0fa" opacity=".18"/>
+  <circle cx="46" cy="15" r="4" fill="#eaf0fa" opacity=".18"/>
+  <rect x="70" y="9" width="220" height="12" rx="6" fill="#eaf0fa" opacity=".08"/>
+
+  <circle cx="46" cy="60" r="14" fill="#22e6a6" opacity=".2" stroke="#22e6a6" stroke-opacity=".6"/>
+  <circle cx="40" cy="56" r="2" fill="#22e6a6"/>
+  <circle cx="52" cy="56" r="2" fill="#22e6a6"/>
+  <path d="M40 65 Q46 70 52 65" stroke="#22e6a6" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <rect x="68" y="48" width="180" height="30" rx="14" fill="#0f1626" stroke="#eaf0fa" stroke-opacity=".1"/>
+  <rect x="84" y="59" width="140" height="8" rx="4" fill="#eaf0fa" opacity=".3"/>
+
+  <rect x="68" y="86" width="230" height="30" rx="14" fill="#0f1626" stroke="#eaf0fa" stroke-opacity=".1"/>
+  <rect x="84" y="97" width="180" height="8" rx="4" fill="#eaf0fa" opacity=".3"/>
+
+  <rect x="232" y="128" width="180" height="30" rx="14" fill="#22e6a6" opacity=".85"/>
+  <rect x="248" y="139" width="140" height="8" rx="4" fill="#0f1626"/>
+
+  <rect x="150" y="166" width="262" height="30" rx="14" fill="#22e6a6" opacity=".85"/>
+  <rect x="166" y="177" width="200" height="8" rx="4" fill="#0f1626"/>
+
+  <g opacity=".8">
+    <circle cx="440" cy="70" r="3" fill="#ffb238"/>
+    <circle cx="452" cy="86" r="2" fill="#ffb238"/>
+    <circle cx="428" cy="96" r="2" fill="#22e6a6"/>
+    <line x1="440" y1="70" x2="452" y2="86" stroke="#ffb238" stroke-opacity=".5" stroke-width="1"/>
+    <line x1="440" y1="70" x2="428" y2="96" stroke="#22e6a6" stroke-opacity=".5" stroke-width="1"/>
+  </g>
+
+  <rect x="24" y="212" width="180" height="7" rx="3.5" fill="#eaf0fa" opacity=".1"/>
+</svg>

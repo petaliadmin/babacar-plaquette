@@ -36,6 +36,8 @@
     --whatsapp-dark:#1DA851;
     --linkedin:#0A66C2;
     --linkedin-dark:#084d94;
+    --violet:#9b8cff;
+    --violet-dim:rgba(155,140,255,.16);
     --font-display:'Space Grotesk',sans-serif;
     --font-body:'Inter',sans-serif;
     --font-mono:'JetBrains Mono',monospace;
@@ -319,16 +321,18 @@
   }
   .work:hover{background:var(--panel-alt);}
   .work-cover{
-    height:130px;display:flex;align-items:center;justify-content:center;
+    height:150px;display:flex;align-items:center;justify-content:center;
     background:var(--panel-alt);border-bottom:1px solid var(--line);
+    overflow:hidden;
   }
-  .work-cover svg{width:36px;height:36px;fill:none;stroke:var(--accent);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.9;}
+  .work-cover img{width:100%;height:100%;object-fit:cover;display:block;}
+  .work-cover.logo img{object-fit:contain;padding:28px;}
   .work-cover.c-site{background:radial-gradient(circle at 28% 22%, rgba(34,230,166,.2), transparent 60%), var(--panel-alt);}
   .work-cover.c-saas{background:radial-gradient(circle at 28% 22%, rgba(255,178,56,.2), transparent 60%), var(--panel-alt);}
-  .work-cover.c-saas svg{stroke:var(--amber);}
   .work-cover.c-mobile{background:radial-gradient(circle at 28% 22%, rgba(10,102,194,.26), transparent 60%), var(--panel-alt);}
-  .work-cover.c-mobile svg{stroke:var(--linkedin);}
   .work-cover.c-ia{background:radial-gradient(circle at 24% 20%, rgba(34,230,166,.2), transparent 55%), radial-gradient(circle at 80% 85%, rgba(255,178,56,.16), transparent 55%), var(--panel-alt);}
+  .work-cover.c-seo{background:radial-gradient(circle at 28% 22%, rgba(155,140,255,.24), transparent 60%), var(--panel-alt);}
+  .work-group-note{font-size:10.5px;text-transform:none;letter-spacing:0;color:var(--muted);font-weight:400;}
   .work-demo{
     position:absolute;top:12px;right:12px;z-index:1;
     font-family:var(--font-mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
@@ -591,30 +595,64 @@
   <div class="wrap">
     <div class="sec-head">
       <h2>Réalisations</h2>
-      <p>Exemples illustratifs par catégorie, en attendant la publication de projets réels.</p>
+      <p>Une sélection de projets réels livrés pour des clients.</p>
     </div>
 
     <div class="work-group">
       <div class="work-group-label">Sites &amp; landing pages</div>
       <div class="works">
         <div class="work">
-          <div class="work-cover c-site"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><circle cx="6.5" cy="6.5" r=".5" fill="currentColor" stroke="none"></circle><circle cx="8.5" cy="6.5" r=".5" fill="currentColor" stroke="none"></circle></svg></div>
-          <span class="work-demo">exemple</span>
+          <div class="work-cover c-site logo"><img src="images/realisations/petalia-cover.png" alt="Aperçu du site Petalia" loading="lazy"></div>
           <div class="work-body">
-            <h3>Atelier Kōra</h3>
-            <p class="desc">Site vitrine pour un atelier d'artisanat, avec formulaire de devis et galerie de réalisations.</p>
-            <div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span></div>
-            <a class="work-link" href="realisation-atelier-kora.html">Voir le projet →</a>
+            <h3>Petalia</h3>
+            <p class="desc">Agriculture intelligente en Afrique : plateforme combinant IoT, intelligence artificielle et drones pour moderniser l'agriculture.</p>
+            <div class="chips"><span class="chip">IoT</span><span class="chip">IA</span><span class="chip">Agritech</span></div>
+            <a class="work-link" href="https://www.petalia.sn/" target="_blank" rel="noopener">Voir le site →</a>
           </div>
         </div>
         <div class="work">
-          <div class="work-cover c-site"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><circle cx="6.5" cy="6.5" r=".5" fill="currentColor" stroke="none"></circle><circle cx="8.5" cy="6.5" r=".5" fill="currentColor" stroke="none"></circle></svg></div>
-          <span class="work-demo">exemple</span>
+          <div class="work-cover c-site"><img src="images/realisations/permis2-cover.jpg" alt="Aperçu du site Permis 2.0" loading="lazy"></div>
           <div class="work-body">
-            <h3>Cabinet Fana Conseil</h3>
-            <p class="desc">Site vitrine pour un cabinet de conseil, avec prise de rendez-vous en ligne intégrée.</p>
-            <div class="chips"><span class="chip">React</span><span class="chip">SEO</span></div>
-            <a class="work-link" href="realisation-cabinet-fana-conseil.html">Voir le projet →</a>
+            <h3>Permis 2.0</h3>
+            <p class="desc">Réviser le code de la route et trouver son auto-école au Sénégal, entièrement en ligne.</p>
+            <div class="chips"><span class="chip">Next.js</span><span class="chip">Éducation</span></div>
+            <a class="work-link" href="https://www.permis2.com/" target="_blank" rel="noopener">Voir le site →</a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-cover c-site logo"><img src="images/realisations/jardin-enfants-cover.png" alt="Aperçu du site Le Jardin d'Enfants" loading="lazy"></div>
+          <div class="work-body">
+            <h3>Le Jardin d'Enfants</h3>
+            <p class="desc">Ressources pédagogiques imprimables pour la maternelle : leçons, supports multilingues et outils pour enseignants.</p>
+            <div class="chips"><span class="chip">WordPress</span><span class="chip">Éducation</span></div>
+            <a class="work-link" href="https://lejardindenfants.com/" target="_blank" rel="noopener">Voir le site →</a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-cover c-site"><img src="images/realisations/power-energy-cover.jpg" alt="Aperçu du site Power Energy Solutions" loading="lazy"></div>
+          <div class="work-body">
+            <h3>Power Energy Solutions</h3>
+            <p class="desc">Ingénierie et solutions énergétiques pour l'Afrique : présentation d'expertise technique pour des projets liés à l'énergie.</p>
+            <div class="chips"><span class="chip">Corporate</span><span class="chip">Énergie</span></div>
+            <a class="work-link" href="https://www.powerenergysolutions.sn/" target="_blank" rel="noopener">Voir le site →</a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-cover c-site"><img src="images/realisations/geoflood-cover.svg" alt="Aperçu de la landing page GeoFlood" loading="lazy"></div>
+          <div class="work-body">
+            <h3>GeoFlood</h3>
+            <p class="desc">Landing page ClimateTech : prévention des inondations au Sénégal avec météo locale, niveau de risque en temps réel et alertes géolocalisées.</p>
+            <div class="chips"><span class="chip">ClimateTech</span><span class="chip">IA</span><span class="chip">Alertes temps réel</span></div>
+            <a class="work-link" href="https://geoflood-landing.vercel.app/" target="_blank" rel="noopener">Voir le site →</a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-cover c-site"><img src="images/realisations/vianego-cover.svg" alt="Aperçu du site Vianego" loading="lazy"></div>
+          <div class="work-body">
+            <h3>Vianego</h3>
+            <p class="desc">Cabinet d'intermédiation commerciale en Afrique de l'Ouest : mise en relation d'entreprises, investisseurs et partenaires stratégiques (agriculture, hydrocarbures, énergie).</p>
+            <div class="chips"><span class="chip">Corporate</span><span class="chip">Affaires</span></div>
+            <a class="work-link" href="https://vianego.vercel.app/" target="_blank" rel="noopener">Voir le site →</a>
           </div>
         </div>
       </div>
@@ -624,23 +662,45 @@
       <div class="work-group-label">SaaS &amp; applications métier</div>
       <div class="works">
         <div class="work">
-          <div class="work-cover c-saas"><svg viewBox="0 0 24 24"><rect x="4" y="12" width="3.5" height="8"></rect><rect x="10.25" y="7" width="3.5" height="13"></rect><rect x="16.5" y="3" width="3.5" height="17"></rect></svg></div>
-          <span class="work-demo">exemple</span>
+          <div class="work-cover c-saas logo"><img src="images/realisations/petalia-cover.png" alt="Aperçu de la plateforme Petalia" loading="lazy"></div>
           <div class="work-body">
-            <h3>StockFlow</h3>
-            <p class="desc">Gestion de stock et de commandes pour PME, avec tableaux de bord et alertes de réapprovisionnement.</p>
-            <div class="chips"><span class="chip">Angular</span><span class="chip">Spring Boot</span><span class="chip">PostgreSQL</span></div>
-            <a class="work-link" href="realisation-stockflow.html">Voir le projet →</a>
+            <h3>Petalia</h3>
+            <p class="desc">Plateforme de pilotage agricole : capteurs IoT, analyse par IA et suivi par drones pour les exploitations.</p>
+            <div class="chips"><span class="chip">SaaS</span><span class="chip">IoT</span><span class="chip">IA</span></div>
+            <a class="work-link" href="https://www.petalia.sn/" target="_blank" rel="noopener">Voir le site →</a>
           </div>
         </div>
         <div class="work">
-          <div class="work-cover c-saas"><svg viewBox="0 0 24 24"><rect x="4" y="12" width="3.5" height="8"></rect><rect x="10.25" y="7" width="3.5" height="13"></rect><rect x="16.5" y="3" width="3.5" height="17"></rect></svg></div>
-          <span class="work-demo">exemple</span>
+          <div class="work-cover c-saas"><img src="images/realisations/permis2-cover.jpg" alt="Aperçu de la plateforme Permis 2.0" loading="lazy"></div>
           <div class="work-body">
-            <h3>FacturePro</h3>
-            <p class="desc">Facturation et devis en ligne pour indépendants, avec suivi des paiements et relances automatiques.</p>
-            <div class="chips"><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">MongoDB</span></div>
-            <a class="work-link" href="realisation-facturepro.html">Voir le projet →</a>
+            <h3>Permis 2.0</h3>
+            <p class="desc">Plateforme SaaS de préparation au permis : suivi de progression, code de la route et mise en relation avec les auto-écoles.</p>
+            <div class="chips"><span class="chip">SaaS</span><span class="chip">Suivi</span><span class="chip">Sénégal</span></div>
+            <a class="work-link" href="https://www.permis2.com/" target="_blank" rel="noopener">Voir le site →</a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="work-cover c-saas"><img src="images/realisations/petalia-soil-cover.jpg" alt="Aperçu de la plateforme Petalia Soil" loading="lazy"></div>
+          <div class="work-body">
+            <h3>Petalia Soil</h3>
+            <p class="desc">Plateforme d'analyse de sol : trouver la terre idéale pour une culture, comparer les paramètres du sol et se connecter directement avec les propriétaires.</p>
+            <div class="chips"><span class="chip">SaaS</span><span class="chip">Agritech</span><span class="chip">Mise en relation</span></div>
+            <a class="work-link" href="https://petalia-soil.vercel.app/" target="_blank" rel="noopener">Voir le site →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group">
+      <div class="work-group-label">SEO</div>
+      <div class="works">
+        <div class="work">
+          <div class="work-cover c-seo logo"><img src="images/realisations/maloc-immo-cover.png" alt="Aperçu du site MALoc Immo Service" loading="lazy"></div>
+          <div class="work-body">
+            <h3>MALoc Immo Service</h3>
+            <p class="desc">Conciergerie Airbnb à Lille et Valenciennes : référencement local optimisé pour capter propriétaires et voyageurs.</p>
+            <div class="chips"><span class="chip">SEO local</span><span class="chip">WordPress</span></div>
+            <a class="work-link" href="https://maloc-immo-service.com/" target="_blank" rel="noopener">Voir le site →</a>
           </div>
         </div>
       </div>
@@ -650,23 +710,22 @@
       <div class="work-group-label">Application mobile</div>
       <div class="works">
         <div class="work">
-          <div class="work-cover c-mobile"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"></rect><line x1="7" y1="18" x2="17" y2="18"></line></svg></div>
-          <span class="work-demo">exemple</span>
+          <div class="work-cover c-mobile logo"><img src="images/realisations/muridpro-cover.png" alt="Icône de l'application Murid Pro" loading="lazy"></div>
           <div class="work-body">
-            <h3>TontineApp</h3>
-            <p class="desc">Application de gestion d'épargne collective, avec suivi des cotisations et notifications de tour.</p>
-            <div class="chips"><span class="chip">Flutter</span><span class="chip">Node.js</span><span class="chip">REST API</span></div>
-            <a class="work-link" href="realisation-tontineapp.html">Voir le projet →</a>
+            <h3>Murid Pro</h3>
+            <p class="desc">Application mobile pour la communauté mouride : Coran, Khassidas (Cheikh Ahmadou Bamba Mbacké), heures de prières et direction de la qibla.</p>
+            <div class="chips"><span class="chip">Android</span><span class="chip">Spiritualité</span><span class="chip">Sénégal</span></div>
+            <a class="work-link" href="https://play.google.com/store/apps/details?id=com.khassida.muridpro" target="_blank" rel="noopener">Voir sur Google Play →</a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="work-group">
-      <div class="work-group-label">IA &amp; automatisation</div>
+      <div class="work-group-label">IA &amp; automatisation <span class="work-group-note">(exemple illustratif)</span></div>
       <div class="works">
         <div class="work">
-          <div class="work-cover c-ia"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"></circle><circle cx="5" cy="19" r="2"></circle><circle cx="19" cy="19" r="2"></circle><line x1="12" y1="7" x2="6.2" y2="17.3"></line><line x1="12" y1="7" x2="17.8" y2="17.3"></line><line x1="7" y1="19" x2="17" y2="19"></line></svg></div>
+          <div class="work-cover c-ia"><img src="images/realisations/assistantpro.svg" alt="Aperçu du chatbot AssistantPro" loading="lazy"></div>
           <span class="work-demo">exemple</span>
           <div class="work-body">
             <h3>AssistantPro</h3>
